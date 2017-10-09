@@ -1,0 +1,42 @@
+[color]
+    ui = true
+    branch = auto
+    diff = auto
+    status = auto
+[alias]
+    co = checkout
+    ci = commit
+    st = status
+    br = branch
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short --all --oneline --decorate
+    today = log --since=midnight --author='Yuki Adachi' --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short --all --oneline --decorate
+    branch-name = "!git rev-parse --abbrev-ref HEAD"
+    f = "!git fetch --all --prune && git rebase origin/$(git branch-name)"
+    p = "!git push origin $(git branch-name)"
+    fet = "!git fetch origin && git reset --hard origin/$(git branch-name)"
+[core]
+    excludesfile = ~/.gitignore
+[push]
+	default = nothing
+[include]
+    path = ~/.gitconfig.local
+[merge]
+	ff = false
+	tool = vimdiff3
+[mergetool "vimdiff3"]
+	cmd = ~/bin/git_merge_wrapper3 \"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+[mergetool]
+	keepBackup = false
+[init]
+	templatedir = ~/.git_template
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[user]
+	name = hirokisan
+	email = expsharetoworld@gmail.com
