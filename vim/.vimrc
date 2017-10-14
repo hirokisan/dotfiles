@@ -9,13 +9,12 @@ endif
 " ========== Install plugins =========="
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
-" todo: add more plugin
-"---plugin list---"
-" matchit.vim
+Plug 'Xuyuanp/nerdtree-git-plugin'
 call plug#end()
 " ====================================="
 
 " ========== Todo =========="
+" todo: add more plugin
 " todo: do not create swap file
 " todo: add color setting
 " todo: add file extention setting
