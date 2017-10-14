@@ -14,6 +14,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'Yggdroot/indentLine'
 Plug 'Shougo/unite.vim'
+Plug 'thinca/vim-quickrun'
 call plug#end()
 " ====================================="
 
