@@ -11,3 +11,9 @@ call plug#end()
 " todo: add completion setting
 " todo: add validation setting
 " todo: divide .vimrc
+
+if filereadable(expand('~/.vimrc.nerdtree'))
+	source ~/.vimrc.nerdtree
+endif
+
+set encoding=utf-8
