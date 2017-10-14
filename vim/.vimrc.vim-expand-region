@@ -1,0 +1,6 @@
+"===== Vim-expand-region config ====="
+
+vmap v <Plug>(expand_region_expand)
+vmap <C-v> <Plug>(expand_region_shrink)
+
+"===================================="

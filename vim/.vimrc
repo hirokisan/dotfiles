@@ -23,6 +23,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'Shougo/neocomplete.vim'
 Plug 'Shougo/neosnippet.vim'
 Plug 'Shougo/neosnippet-snippets'
+Plug 'terryma/vim-expand-region'
 call plug#end()
 " ====================================="
 
@@ -65,5 +66,8 @@ if filereadable(expand('~/.vimrc.nerdtree'))
 endif
 if filereadable(expand('~/.vimrc.unite'))
 	source ~/.vimrc.unite
+endif
+if filereadable(expand('~/.vimrc.vim-expand-region'))
+	source ~/.vimrc.vim-expand-region
 endif
 " ========================================="

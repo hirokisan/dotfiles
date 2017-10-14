@@ -16,6 +16,7 @@ ln -fs dotfiles/vim/.vimrc.open-browser
 ln -fs dotfiles/vim/.vimrc.vim-fugitive
 ln -fs dotfiles/vim/.vimrc.neocomplete
 ln -fs dotfiles/vim/.vimrc.neosnippet
+ln -fs dotfiles/vim/.vimrc.vim-expand-region
 ln -fs dotfiles/.gitconfig
 ln -fs dotfiles/.tigrc
 
