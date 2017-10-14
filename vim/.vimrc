@@ -14,6 +14,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'Yggdroot/indentLine'
 Plug 'Shougo/unite.vim'
+Plug 'Shougo/neomru.vim'
 Plug 'thinca/vim-quickrun'
 Plug 'tyru/caw.vim'
 Plug 'tyru/open-browser.vim'
@@ -35,17 +36,14 @@ call plug#end()
 " todo: divide .vimrc
 " =========================="
 
-" ========== Include other files =========="
-if filereadable(expand('~/.vimrc.nerdtree'))
-	source ~/.vimrc.nerdtree
-endif
-" ========================================="
-
 " ========== Specific setting =========="
 set encoding=utf-8
 " ======================================"
 
-" ========== Common map =========="
+" ========== Common map (Locate "Common map" section before "Include other files") =========="
+" Set leader
+let mapleader = ","
+
 " Move pane
 nmap <C-H> <C-W>h
 nmap <C-J> <C-W>j
@@ -57,3 +55,13 @@ nmap <Space>n :tabnew<CR>
 nmap <Space>l gt
 nmap <Space>h gT
 " ================================"
+
+" ========== Include other files =========="
+" todo: automate include
+if filereadable(expand('~/.vimrc.nerdtree'))
+	source ~/.vimrc.nerdtree
+endif
+if filereadable(expand('~/.vimrc.unite'))
+	source ~/.vimrc.unite
+endif
+" ========================================="

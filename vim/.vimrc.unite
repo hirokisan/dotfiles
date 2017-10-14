@@ -1,0 +1,8 @@
+"===== Unite config ====="
+
+"========================"
+
+"===== Map ====="
+nnoremap <Leader>t :Unite tab<CR>
+nnoremap <Leader>f :Unite file_mru<CR>
+"==============="
