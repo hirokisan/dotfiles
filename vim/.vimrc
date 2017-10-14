@@ -16,6 +16,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'Shougo/unite.vim'
 Plug 'thinca/vim-quickrun'
 Plug 'tyru/caw.vim'
+Plug 'tyru/open-browser.vim'
 call plug#end()
 " ====================================="
 
