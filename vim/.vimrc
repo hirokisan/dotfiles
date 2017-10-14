@@ -44,7 +44,7 @@ endif
 " ========== Specific setting =========="
 set encoding=utf-8
 " ======================================"
-"
+
 " ========== Common map =========="
 " Move pane
 nmap <C-H> <C-W>h
@@ -52,4 +52,8 @@ nmap <C-J> <C-W>j
 nmap <C-K> <C-W>k
 nmap <C-L> <C-W>l
 
+" Move tab
+nmap <Space>n :tabnew<CR>
+nmap <Space>l gt
+nmap <Space>h gT
 " ================================"
