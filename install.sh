@@ -13,6 +13,7 @@ ln -fs dotfiles/vim/.vimrc.unite
 ln -fs dotfiles/vim/.vimrc.vim-quickrun
 ln -fs dotfiles/vim/.vimrc.caw
 ln -fs dotfiles/vim/.vimrc.open-browser
+ln -fs dotfiles/vim/.vimrc.vim-fugitive
 ln -fs dotfiles/.gitconfig
 ln -fs dotfiles/.tigrc
 

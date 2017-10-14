@@ -18,6 +18,7 @@ Plug 'thinca/vim-quickrun'
 Plug 'tyru/caw.vim'
 Plug 'tyru/open-browser.vim'
 Plug 'edkolev/tmuxline.vim'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 " ====================================="
 
