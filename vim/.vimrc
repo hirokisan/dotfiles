@@ -19,6 +19,7 @@ Plug 'tyru/caw.vim'
 Plug 'tyru/open-browser.vim'
 Plug 'edkolev/tmuxline.vim'
 Plug 'tpope/vim-fugitive'
+Plug 'Shougo/neocomplete.vim'
 call plug#end()
 " ====================================="
 

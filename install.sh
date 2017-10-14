@@ -14,6 +14,7 @@ ln -fs dotfiles/vim/.vimrc.vim-quickrun
 ln -fs dotfiles/vim/.vimrc.caw
 ln -fs dotfiles/vim/.vimrc.open-browser
 ln -fs dotfiles/vim/.vimrc.vim-fugitive
+ln -fs dotfiles/vim/.vimrc.neocomplete
 ln -fs dotfiles/.gitconfig
 ln -fs dotfiles/.tigrc
 
