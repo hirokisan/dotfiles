@@ -11,6 +11,7 @@ ln -fs dotfiles/vim/.vimrc.vim-airline
 ln -fs dotfiles/vim/.vimrc.indentLine
 ln -fs dotfiles/vim/.vimrc.unite
 ln -fs dotfiles/vim/.vimrc.vim-quickrun
+ln -fs dotfiles/vim/.vimrc.caw
 ln -fs dotfiles/.gitconfig
 ln -fs dotfiles/.tigrc
 

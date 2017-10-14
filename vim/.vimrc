@@ -15,6 +15,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'Yggdroot/indentLine'
 Plug 'Shougo/unite.vim'
 Plug 'thinca/vim-quickrun'
+Plug 'tyru/caw.vim'
 call plug#end()
 " ====================================="
 
