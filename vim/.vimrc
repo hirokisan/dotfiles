@@ -56,7 +56,7 @@ nmap <Space>n :tabnew<CR>
 nmap <Space>l gt
 nmap <Space>h gT
 
-nmap <Leader>r :source ~/.vimrc<CR>
+nmap <Leader>l :source ~/.vimrc<CR>
 " ================================"
 
 " ========== Include other files =========="
