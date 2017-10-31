@@ -39,6 +39,19 @@ call plug#end()
 
 " ========== Specific setting =========="
 
+" ========== Basic =========="
+
+" Vimをvi互換モードではなく、Vimとして使用する
+set nocompatible
+" シンタックスハイライト機能をオン
+syntax enable
+" ファイルタイプ検出及び各種プラグインを有効にする
+filetype plugin indent on
+" 行番号を表示する
+set number
+
+" ==========================="
+
 " ========== character =========="
 "
 " === ファイル読み込み時の文字コード ==="
