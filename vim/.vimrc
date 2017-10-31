@@ -38,7 +38,23 @@ call plug#end()
 " =========================="
 
 " ========== Specific setting =========="
+
+" ========== character =========="
+"
+" === ファイル読み込み時の文字コード ==="
 set encoding=utf-8
+
+" === Vim script内でマルチバイト文字を使う場合の設定 ==="
+scriptencoding utf-8
+
+" === □や○文字が崩れる問題を解決, if you use iterm2 chk https://qiita.com/macoshita/items/f7e0f5eda02f45736b52 ==="
+" set ambiwidth=double
+
+" 改行コードの自動判別. 左側が優先される
+set fileformats=unix,dos,mac
+
+" ==============================="
+
 " ======================================"
 
 " ========== Common map (Locate "Common map" section before "Include other files") =========="
