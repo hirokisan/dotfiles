@@ -24,3 +24,15 @@ ln -fs dotfiles/.zshrc
 #if [ -f ~/.vim/autoload/plug.vim ];then
   curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 #fi
+
+########## install tmux ##########
+mkdir -p ~/local/src
+cd ~/local/src
+rm -fr tmux-2.6
+wget 'https://github.com/tmux/tmux/releases/download/2.6/tmux-2.6.tar.gz'
+tar zxvf tmux-2.6.tar.gz
+cd tmux-2.6
+./configure --prefix=$HOME/local
+make
+make install
+##################################
