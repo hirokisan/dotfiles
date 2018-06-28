@@ -36,3 +36,9 @@ cd tmux-2.6
 make
 make install
 ##################################
+
+########## get config tmuxinator ##########
+mkdir -p ~/.tmuxinator
+cd ~/.tmuxinator
+wget https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/tmuxinator.zsh
+###########################################
