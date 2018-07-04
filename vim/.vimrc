@@ -24,6 +24,10 @@ Plug 'Shougo/neocomplete.vim'
 Plug 'Shougo/neosnippet.vim'
 Plug 'Shougo/neosnippet-snippets'
 Plug 'terryma/vim-expand-region'
+
+" UML "
+Plug 'kazuph/previm', 'feature/add-plantuml-plugin'
+Plug 'tyru/open-browser.vim'
 call plug#end()
 " ====================================="
 
@@ -139,6 +143,9 @@ nmap <Space>n :tabnew<CR>
 nmap <Space>l gt
 nmap <Space>h gT
 
+" Previm
+nmap <Space>mk :PrevimOpen<cr>
+
 nmap <Leader>l :source ~/.vimrc<CR>
 " ================================"
 
@@ -154,3 +161,4 @@ if filereadable(expand('~/.vimrc.vim-expand-region'))
 	source ~/.vimrc.vim-expand-region
 endif
 " ========================================="
+
