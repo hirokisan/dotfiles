@@ -42,3 +42,10 @@ mkdir -p ~/.tmuxinator
 cd ~/.tmuxinator
 wget https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/tmuxinator.zsh
 ###########################################
+
+########## get vim-ref php source ##########
+mkdir -p ~/vim/refs
+cd ~/local/src
+wget http://jp2.php.net/distributions/manual/php_manual_ja.tar.gz
+tar -zxvf php_manual_ja.tar.gz -C $HOME/vim/refs
+############################################

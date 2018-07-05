@@ -24,9 +24,12 @@ Plug 'Shougo/neocomplete.vim'
 Plug 'Shougo/neosnippet.vim'
 Plug 'Shougo/neosnippet-snippets'
 Plug 'terryma/vim-expand-region'
+" depends on package lynx
+Plug 'thinca/vim-ref'
 
 " UML "
-Plug 'kazuph/previm', 'feature/add-plantuml-plugin'
+Plug 'kazuph/previm'
+Plug 'feature/add-plantuml-plugin'
 Plug 'tyru/open-browser.vim'
 call plug#end()
 " ====================================="
@@ -123,6 +126,9 @@ scriptencoding utf-8
 
 " 改行コードの自動判別. 左側が優先される
 set fileformats=unix,dos,mac
+
+" vim-ref
+let g:ref_phpmanual_path = $HOME . '/vim/refs/php-chunked-xhtml'
 
 " ==============================="
 
