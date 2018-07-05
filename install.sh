@@ -60,3 +60,14 @@ tar zxvf peco_linux_amd64.tar.gz
 cp peco_linux_amd64/peco ~/local/bin/peco
 chmod 744 ~/local/bin/peco
 ##################################
+
+########## Install Peco ##########
+mkdir ~/local/src && mkdir ~/local/bin
+cd ~/local/src
+wget https://github.com/jonas/tig/releases/download/tig-2.3.3/tig-2.3.3.tar.gz
+tar zxf tig-2.3.3.tar.gz
+cd ./tig-2.3.3
+./configure
+make prefix=$HOME/local
+make install prefix=$HOME/local
+##################################
