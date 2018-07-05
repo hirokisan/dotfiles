@@ -72,6 +72,8 @@ set noerrorbells
 set showmatch matchtime=1
 " カーソルラインをハイライト
 set cursorline
+" スワップファイル.swpを作成しない
+set noswapfile
 
 " ==========================="
 
