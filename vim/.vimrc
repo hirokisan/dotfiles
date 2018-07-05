@@ -12,6 +12,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
+" インデントの可視化
 Plug 'Yggdroot/indentLine'
 Plug 'Shougo/unite.vim'
 Plug 'Shougo/neomru.vim'
@@ -24,8 +25,10 @@ Plug 'Shougo/neocomplete.vim'
 Plug 'Shougo/neosnippet.vim'
 Plug 'Shougo/neosnippet-snippets'
 Plug 'terryma/vim-expand-region'
+Plug 'bronson/vim-trailing-whitespace'
 " depends on package lynx
 Plug 'thinca/vim-ref'
+Plug 'vim-syntastic/syntastic'
 
 " UML "
 Plug 'kazuph/previm'
@@ -56,6 +59,19 @@ syntax enable
 filetype plugin indent on
 " 行番号を表示する
 set number
+" ファイルを上書きする前にバックアップを作ることを無効化
+set nowritebackup
+set nobackup
+" 検索するときに大文字小文字を区別しない
+set ignorecase
+" 小文字で検索すると大文字と小文字を無視して検索
+set smartcase
+" エラーメッセージの表示時にビープを鳴らさない
+set noerrorbells
+" 対応する括弧やブレースを表示
+set showmatch matchtime=1
+" カーソルラインをハイライト
+set cursorline
 
 " ==========================="
 
@@ -132,6 +148,22 @@ let g:ref_phpmanual_path = $HOME . '/vim/refs/php-chunked-xhtml'
 
 " ==============================="
 
+" ========== syntastic =========="
+
+" 他のVimプラグインと競合するのを防ぐ
+let g:syntastic_always_populate_loc_list = 1
+" 構文エラー行に「>>」を表示
+let g:syntastic_enable_signs = 1
+" ファイルを開いた時に構文エラーチェックを実行する
+let g:syntastic_check_on_open = 1
+" 「:wq」で終了する時も構文エラーチェックする
+let g:syntastic_check_on_wq = 1
+" 構文エラーリストを表示
+let g:syntastic_auto_loc_list=1
+let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd'] 
+
+" ==============================="
+
 " ======================================"
 
 " ========== Common map (Locate "Common map" section before "Include other files") =========="
@@ -151,6 +183,9 @@ nmap <Space>h gT
 
 " Previm
 nmap <Space>mk :PrevimOpen<cr>
+
+" 最近使用したファイル
+nnoremap <Space>f :Unite file_mru<CR>
 
 nmap <Leader>l :source ~/.vimrc<CR>
 " ================================"
