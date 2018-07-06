@@ -187,6 +187,7 @@ nmap <Space>h gT
 nmap <Space>mk :PrevimOpen<cr>
 
 " vim-ref https://qiita.com/c8112002/items/85a2c2cc3721c79a5322 shift+k
+nmap <Space>mp :<C-u>Ref phpmanual<Space>
 
 " 最近使用したファイル
 nnoremap <Space>f :Unite file_mru<CR>
