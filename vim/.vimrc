@@ -8,6 +8,7 @@ endif
 
 " ========== Install plugins =========="
 call plug#begin('~/.vim/plugged')
+Plug 'Shougo/vimproc.vim', { 'dir': '~/.vim/plugged/vimproc.vim', 'do': 'make' }
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'airblade/vim-gitgutter'
