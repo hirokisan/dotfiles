@@ -193,6 +193,10 @@ nmap <Space>mp :<C-u>Ref phpmanual<Space>
 " 最近使用したファイル
 nnoremap <Space>f :Unite file_mru<CR>
 
+" Plugのインストール
+nmap <Leader>i :PlugInstall<CR>
+
+" vimrcの更新
 nmap <Leader>l :source ~/.vimrc<CR>
 " ================================"
 
