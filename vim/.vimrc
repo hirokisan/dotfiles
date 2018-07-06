@@ -186,6 +186,8 @@ nmap <Space>h gT
 " Previm
 nmap <Space>mk :PrevimOpen<cr>
 
+" vim-ref https://qiita.com/c8112002/items/85a2c2cc3721c79a5322 shift+k
+
 " 最近使用したファイル
 nnoremap <Space>f :Unite file_mru<CR>
 
