@@ -36,6 +36,10 @@ Plug 'kazuph/previm'
 Plug 'feature/add-plantuml-plugin'
 Plug 'tyru/open-browser.vim'
 call plug#end()
+autocmd VimEnter *
+  \  if !empty(filter(copy(g:plugs), '!isdirectory(v:val.dir)'))
+  \|   PlugInstall | q
+  \| endif
 " ====================================="
 
 " ========== Todo =========="
