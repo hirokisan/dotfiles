@@ -62,7 +62,7 @@ chmod 744 ~/local/bin/peco
 ##################################
 
 ########## Install Peco ##########
-mkdir ~/local/src && mkdir ~/local/bin
+mkdir -p ~/local/src && mkdir -p ~/local/bin
 cd ~/local/src
 wget https://github.com/jonas/tig/releases/download/tig-2.3.3/tig-2.3.3.tar.gz
 tar zxf tig-2.3.3.tar.gz
@@ -71,3 +71,14 @@ cd ./tig-2.3.3
 make prefix=$HOME/local
 make install prefix=$HOME/local
 ##################################
+
+########## Install MySQLTuner ##########
+mkdir -p ~/local/bin
+cd ~/local/bin
+wget http://mysqltuner.pl/ -O mysqltuner.pl
+chmod +x mysqltuner.pl
+########################################
+
+########## Install MySQLTuner ##########
+source ~/.zshrc
+########################################
