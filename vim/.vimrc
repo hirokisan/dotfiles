@@ -33,7 +33,6 @@ Plug 'vim-syntastic/syntastic'
 
 " UML "
 Plug 'kazuph/previm'
-Plug 'feature/add-plantuml-plugin'
 Plug 'tyru/open-browser.vim'
 call plug#end()
 autocmd VimEnter *
