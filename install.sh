@@ -87,13 +87,6 @@ make prefix=$HOME/local
 make install prefix=$HOME/local
 ##################################
 
-########## Install MySQLTuner ##########
-mkdir -p ~/local/bin
-cd ~/local/bin
-wget http://mysqltuner.pl/ -O mysqltuner.pl
-chmod +x mysqltuner.pl
-########################################
-
 ########## Install Zplug ##########
 cd
 curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
@@ -102,3 +95,11 @@ curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/instal
 ########## Source .zshrc ##########
 source ~/.zshrc
 ###################################
+
+########## Install MySQLTuner ##########
+mkdir -p ~/local/bin
+cd ~/local/bin
+wget http://mysqltuner.pl/ -O mysqltuner.pl
+chmod +x mysqltuner.pl
+########################################
+

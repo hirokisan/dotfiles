@@ -4,6 +4,7 @@ compinit -u
 export LANG=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
 export EDITOR=vim
+export SHELL=$HOME/local/bin/zsh
 
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH="$PATH:`yarn global bin`"
