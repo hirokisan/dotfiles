@@ -68,3 +68,9 @@ function peco-select-history() {
 zle -N peco-select-history
 bindkey '^r' peco-select-history
 #############
+
+#### Completion ###
+zstyle ':completion:*:sudo:*' command-path /usr/local/sbin /usr/local/bin \
+                             /usr/sbin /usr/bin /sbin /bin /usr/X11R6/bin \
+                             /usr/local/git/bin
+###################
