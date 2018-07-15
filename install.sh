@@ -33,7 +33,7 @@ rm -fr zsh-5.5.1.tar.xz
 wget https://sourceforge.net/projects/zsh/files/zsh/5.5.1/zsh-5.5.1.tar.xz/download -O zsh-5.5.1.tar.xz
 tar xvf zsh-5.5.1.tar.xz
 cd zsh-5.5.1
-./configure --enable-multibyte --prefix=$HOME/local
+./configure --enable-multibyte --enable-pcre --prefix=$HOME/local
 make
 make install
 sudo sh -c "echo '$HOME/local/bin/zsh' >> /etc/shells"
@@ -86,11 +86,6 @@ cd ./tig-2.3.3
 make prefix=$HOME/local
 make install prefix=$HOME/local
 ##################################
-
-########## Install Zplug ##########
-cd
-curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
-########################################
 
 ########## Source .zshrc ##########
 source ~/.zshrc
