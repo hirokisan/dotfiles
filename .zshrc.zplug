@@ -1,0 +1,5 @@
+source ~/.zplug/init.zsh
+
+zplug "zsh-users/zsh-syntax-highlighting"
+
+zplug load --verbose

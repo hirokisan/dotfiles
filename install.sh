@@ -20,10 +20,25 @@ ln -fs dotfiles/vim/.vimrc.vim-expand-region
 ln -fs dotfiles/.gitconfig
 ln -fs dotfiles/.tigrc
 ln -fs dotfiles/.zshrc
+ln -fs dotfiles/.zshrc.zplug
 
 #if [ -f ~/.vim/autoload/plug.vim ];then
   curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 #fi
+
+########## install zsh ##########
+mkdir -p ~/local/src
+cd ~/local/src
+rm -fr zsh-5.5.1.tar.xz
+wget https://sourceforge.net/projects/zsh/files/zsh/5.5.1/zsh-5.5.1.tar.xz/download -O zsh-5.5.1.tar.xz
+tar xvf zsh-5.5.1.tar.xz
+cd zsh-5.5.1
+./configure --enable-multibyte --prefix=$HOME/local
+make
+make install
+sudo echo $HOME/local/bin/zsh >> /etc/shells
+sudo chsh -s $HOME/local/bin/zsh
+##################################
 
 ########## install tmux ##########
 mkdir -p ~/local/src
@@ -79,6 +94,11 @@ wget http://mysqltuner.pl/ -O mysqltuner.pl
 chmod +x mysqltuner.pl
 ########################################
 
-########## Install MySQLTuner ##########
-source ~/.zshrc
+########## Install Zplug ##########
+cd
+curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
 ########################################
+
+########## Source .zshrc ##########
+source ~/.zshrc
+###################################
