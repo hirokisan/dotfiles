@@ -150,7 +150,7 @@ scriptencoding utf-8
 set fileformats=unix,dos,mac
 
 " vim-ref
-let g:ref_phpmanual_path = $HOME . '/vim/refs/php-chunked-xhtml'
+let g:ref_phpmanual_path = $HOME . '/.vim/refs/php-chunked-xhtml'
 
 " ==============================="
 
