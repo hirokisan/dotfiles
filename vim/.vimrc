@@ -214,5 +214,8 @@ endif
 if filereadable(expand('~/.vimrc.vim-expand-region'))
 	source ~/.vimrc.vim-expand-region
 endif
+if filereadable(expand('~/.vimrc.vim-quickrun'))
+	source ~/.vimrc.vim-quickrun
+endif
 " ========================================="
 
