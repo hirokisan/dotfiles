@@ -101,7 +101,7 @@ make install prefix=$HOME/local
 ###################################
 
 ########## Source .zshrc ##########
-source ~/.zshrc
+#source ~/.zshrc
 ###################################
 
 ########## Install MySQLTuner ##########
