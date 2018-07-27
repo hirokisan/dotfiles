@@ -17,6 +17,7 @@ ln -fs dotfiles/vim/.vimrc.vim-fugitive
 ln -fs dotfiles/vim/.vimrc.neocomplete
 ln -fs dotfiles/vim/.vimrc.neosnippet
 ln -fs dotfiles/vim/.vimrc.vim-expand-region
+ln -fs dotfiles/vim/.vimrc.tagbar
 ln -fs dotfiles/.gitconfig
 ln -fs dotfiles/.tigrc
 ln -fs dotfiles/.zshrc
@@ -87,6 +88,17 @@ cd ./tig-2.3.3
 make prefix=$HOME/local
 make install prefix=$HOME/local
 ##################################
+
+########## install ctags ##########
+mkdir -p ~/local/src
+cd ~/local/src
+wget http://prdownloads.sourceforge.net/ctags/ctags-5.8.tar.gz
+tar zxf ctags-5.8.tar.gz
+cd ctags-5.8
+./configure
+make prefix=$HOME/local
+make install prefix=$HOME/local
+###################################
 
 ########## Source .zshrc ##########
 source ~/.zshrc

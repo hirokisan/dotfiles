@@ -30,6 +30,7 @@ Plug 'bronson/vim-trailing-whitespace'
 " depends on package lynx
 Plug 'thinca/vim-ref'
 Plug 'vim-syntastic/syntastic'
+Plug 'majutsushi/tagbar'
 
 " UML "
 Plug 'kazuph/previm'
@@ -219,6 +220,9 @@ if filereadable(expand('~/.vimrc.vim-quickrun'))
 endif
 if filereadable(expand('~/.vimrc.neosnippet'))
 	source ~/.vimrc.neosnippet
+endif
+if filereadable(expand('~/.vimrc.tagbar'))
+	source ~/.vimrc.tagbar
 endif
 " ========================================="
 
