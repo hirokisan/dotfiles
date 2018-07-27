@@ -217,5 +217,8 @@ endif
 if filereadable(expand('~/.vimrc.vim-quickrun'))
 	source ~/.vimrc.vim-quickrun
 endif
+if filereadable(expand('~/.vimrc.neosnippet'))
+	source ~/.vimrc.neosnippet
+endif
 " ========================================="
 
