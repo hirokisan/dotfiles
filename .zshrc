@@ -43,6 +43,9 @@ setopt share_history
 setopt hist_ignore_space
 setopt hist_reduce_blanks
 
+# 補完の際に大文字小文字を区別しない
+zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}'
+
 ###########################
 
 
