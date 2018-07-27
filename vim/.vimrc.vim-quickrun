@@ -1,2 +1,4 @@
 " Run
 map <silent> ;r :QuickRun<CR>
+
+let g:quickrun_config={'*': {'split': 'vertical'}}
