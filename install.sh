@@ -18,6 +18,7 @@ ln -fs dotfiles/vim/.vimrc.neocomplete
 ln -fs dotfiles/vim/.vimrc.neosnippet
 ln -fs dotfiles/vim/.vimrc.vim-expand-region
 ln -fs dotfiles/vim/.vimrc.tagbar
+ln -fs dotfiles/vim/.vimrc.bufexplorer
 ln -fs dotfiles/.gitconfig
 ln -fs dotfiles/.tigrc
 ln -fs dotfiles/.zshrc

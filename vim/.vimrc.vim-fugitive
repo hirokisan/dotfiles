@@ -1,0 +1,11 @@
+" Fugitive mapping
+nmap <Space>gs :Gstatus<cr>
+nmap <Space>gd :Gdiff<cr>
+nmap <Space>ga :Gwrite<cr>
+nmap <Space>gr :Gread<cr>
+nmap <Space>gc :Gcommit<cr>
+nmap <Space>gb :Gblame<cr>
+nmap <Space>gre :silent! Ggrep<Space>
+
+" grep検索の実行後にQuickFix Listを表示する
+autocmd QuickFixCmdPost *grep* cwindow
