@@ -82,7 +82,7 @@ cp peco_linux_amd64/peco ~/local/bin/peco
 chmod 744 ~/local/bin/peco
 ##################################
 
-########## Install Peco ##########
+########## Install Tig ##########
 mkdir -p ~/local/src && mkdir -p ~/local/bin
 cd ~/local/src
 wget https://github.com/jonas/tig/releases/download/tig-2.3.3/tig-2.3.3.tar.gz
@@ -91,7 +91,7 @@ cd ./tig-2.3.3
 ./configure
 make prefix=$HOME/local
 make install prefix=$HOME/local
-##################################
+#################################
 
 ########## install ctags ##########
 mkdir -p ~/local/src
