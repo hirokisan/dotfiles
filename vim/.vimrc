@@ -20,7 +20,7 @@ Plug 'Shougo/neomru.vim'
 Plug 'thinca/vim-quickrun'
 Plug 'tyru/caw.vim'
 Plug 'tyru/open-browser.vim'
-Plug 'edkolev/tmuxline.vim'
+"Plug 'edkolev/tmuxline.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'Shougo/neocomplete.vim'
 Plug 'Shougo/neosnippet.vim'
@@ -231,5 +231,8 @@ endif
 if filereadable(expand('~/.vimrc.vim-fugitive'))
 	source ~/.vimrc.vim-fugitive
 endif
+"if filereadable(expand('~/.vimrc.tmuxline.vim'))
+"	source ~/.vimrc.tmuxline.vim
+"endif
 " ========================================="
 
