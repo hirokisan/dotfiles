@@ -31,6 +31,7 @@ Plug 'bronson/vim-trailing-whitespace'
 Plug 'thinca/vim-ref'
 Plug 'vim-syntastic/syntastic'
 Plug 'majutsushi/tagbar'
+Plug 'jlanzarotta/bufexplorer'
 
 " UML "
 Plug 'kazuph/previm'
@@ -223,6 +224,12 @@ if filereadable(expand('~/.vimrc.neosnippet'))
 endif
 if filereadable(expand('~/.vimrc.tagbar'))
 	source ~/.vimrc.tagbar
+endif
+if filereadable(expand('~/.vimrc.bufexplorer'))
+	source ~/.vimrc.bufexplorer
+endif
+if filereadable(expand('~/.vimrc.vim-fugitive'))
+	source ~/.vimrc.vim-fugitive
 endif
 " ========================================="
 

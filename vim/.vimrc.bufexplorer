@@ -1,0 +1,2 @@
+" nnoremap <Space>b :BufExplorer<CR>
+nnoremap <Space>b :BufExplorerVerticalSplit<CR>
