@@ -20,6 +20,10 @@ source ~/.tmuxinator/tmuxinator.zsh
 source ~/.zshrc.zplug
 ##########################
 
+###### set up alias ######
+source ~/.zshrc.alias
+##########################
+
 ###### Basic Setting ######
 # PCRE 互換の正規表現を使う
 setopt re_match_pcre

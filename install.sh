@@ -19,9 +19,12 @@ ln -fs dotfiles/vim/.vimrc.neosnippet
 ln -fs dotfiles/vim/.vimrc.vim-expand-region
 ln -fs dotfiles/vim/.vimrc.tagbar
 ln -fs dotfiles/vim/.vimrc.bufexplorer
+ln -fs dotfiles/vim/.vimrc.tmuxline.vim
 ln -fs dotfiles/.gitconfig
 ln -fs dotfiles/.tigrc
+ln -fs dotfiles/.tmux.conf
 ln -fs dotfiles/.zshrc
+ln -fs dotfiles/.zshrc.alias
 ln -fs dotfiles/.zshrc.zplug
 
 #if [ -f ~/.vim/autoload/plug.vim ];then
