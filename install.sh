@@ -88,9 +88,9 @@ cd ~/local/src
 wget https://github.com/jonas/tig/releases/download/tig-2.3.3/tig-2.3.3.tar.gz
 tar zxf tig-2.3.3.tar.gz
 cd ./tig-2.3.3
-./configure
-make prefix=$HOME/local
-make install prefix=$HOME/local
+./configure --prefix=$HOME/local
+make
+make install
 #################################
 
 ########## install ctags ##########
@@ -99,9 +99,9 @@ cd ~/local/src
 wget http://prdownloads.sourceforge.net/ctags/ctags-5.8.tar.gz
 tar zxf ctags-5.8.tar.gz
 cd ctags-5.8
-./configure
-make prefix=$HOME/local
-make install prefix=$HOME/local
+./configure --prefix=$HOME/local
+make
+make install
 ###################################
 
 ########## Source .zshrc ##########
