@@ -42,8 +42,8 @@ cd zsh-5.5.1
 make
 make install
 sudo sh -c "echo '$HOME/local/bin/zsh' >> /etc/shells"
-## sudo chsh -s $HOME/local/bin/zsh $username only if root can use chsh
-chsh -s $HOME/local/bin/zsh
+sudo chsh -s $HOME/local/bin/zsh sandbox
+# chsh -s $HOME/local/bin/zsh
 ##################################
 
 ########## install tmux ##########
@@ -103,6 +103,18 @@ cd ctags-5.8
 make
 make install
 ###################################
+
+########## install ag ##########
+# https://geoff.greer.fm/ag/
+mkdir -p ~/local/src
+cd ~/local/src
+wget https://geoff.greer.fm/ag/releases/the_silver_searcher-2.1.0.tar.gz
+tar zxf the_silver_searcher-2.1.0.tar.gz
+cd the_silver_searcher-2.1.0
+./configure --prefix=$HOME/local
+make
+make install
+################################
 
 ########## Source .zshrc ##########
 #source ~/.zshrc
