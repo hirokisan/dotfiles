@@ -104,6 +104,18 @@ make
 make install
 ###################################
 
+########## install ag ##########
+# https://geoff.greer.fm/ag/
+mkdir -p ~/local/src
+cd ~/local/src
+wget https://geoff.greer.fm/ag/releases/the_silver_searcher-2.1.0.tar.gz
+tar zxf the_silver_searcher-2.1.0.tar.gz
+cd the_silver_searcher-2.1.0
+./configure --prefix=$HOME/local
+make
+make install
+################################
+
 ########## Source .zshrc ##########
 #source ~/.zshrc
 ###################################
