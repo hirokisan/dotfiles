@@ -42,8 +42,8 @@ cd zsh-5.5.1
 make
 make install
 sudo sh -c "echo '$HOME/local/bin/zsh' >> /etc/shells"
-sudo chsh -s $HOME/local/bin/zsh docker
-#chsh -s $HOME/local/bin/zsh
+#sudo chsh -s $HOME/local/bin/zsh sandbox
+chsh -s $HOME/local/bin/zsh
 ##################################
 
 ########## install tmux ##########
