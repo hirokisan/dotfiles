@@ -38,12 +38,12 @@ rm -fr zsh-5.5.1.tar.xz
 wget https://sourceforge.net/projects/zsh/files/zsh/5.5.1/zsh-5.5.1.tar.xz/download -O zsh-5.5.1.tar.xz
 tar xvf zsh-5.5.1.tar.xz
 cd zsh-5.5.1
-./configure --enable-multibyte --enable-pcre --prefix=$HOME/local
+./configure --enable-multibyte --disable-gdbm --enable-pcre --prefix=$HOME/local
 make
 make install
 sudo sh -c "echo '$HOME/local/bin/zsh' >> /etc/shells"
-#sudo chsh -s $HOME/local/bin/zsh sandbox
-chsh -s $HOME/local/bin/zsh
+sudo chsh -s $HOME/local/bin/zsh docker
+#chsh -s $HOME/local/bin/zsh
 ##################################
 
 ########## install tmux ##########
