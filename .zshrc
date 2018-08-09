@@ -77,6 +77,20 @@ zle -N peco-select-history
 bindkey '^r' peco-select-history
 #############
 
+# git branch
+function peco-git-recent-branches () {
+    local selected_branch=$(git for-each-ref --format='%(refname)' --sort=-committerdate refs/heads | \
+        perl -pne 's{^refs/heads/}{}' | \
+        peco)
+    if [ -n "$selected_branch" ]; then
+        BUFFER="git checkout ${selected_branch}"
+        zle accept-line
+    fi
+    zle clear-screen
+}
+zle -N peco-git-recent-branches
+bindkey "^b" peco-git-recent-branches
+
 #### Completion ###
 zstyle ':completion:*:sudo:*' command-path /usr/local/sbin /usr/local/bin \
                              /usr/sbin /usr/bin /sbin /bin /usr/X11R6/bin \
