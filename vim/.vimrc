@@ -142,6 +142,7 @@ endif
 "
 " === ファイル読み込み時の文字コード ==="
 set encoding=utf-8
+set fileencodings=iso-2022-jp,cp932,sjis,euc-jp,utf-8
 
 " === Vim script内でマルチバイト文字を使う場合の設定 ==="
 scriptencoding utf-8
