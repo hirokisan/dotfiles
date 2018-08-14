@@ -134,6 +134,13 @@ if has("autocmd")
   autocmd FileType scala       setlocal sw=2 sts=2 ts=2 et
 endif
 
+" https://mickey24.hatenablog.com/entry/20120808/vim_highlight_trailing_spaces
+augroup HighlightTrailingSpaces
+  autocmd!
+  autocmd VimEnter,WinEnter,ColorScheme * highlight TrailingSpaces term=underline guibg=Red ctermbg=Red
+  autocmd VimEnter,WinEnter * match TrailingSpaces /\s\+$/
+augroup END
+
 " ========== End Indent =========="
 
 " ==========================="
