@@ -197,9 +197,9 @@ nmap <Leader>l :source ~/.vimrc<CR>
 
 " ========== Include other files =========="
 " todo: automate include
-"if filereadable(expand('~/.vimrc.encode'))
-"	source ~/.vimrc.encode
-"endif
+if filereadable(expand('~/.vimrc.encode'))
+	source ~/.vimrc.encode
+endif
 if filereadable(expand('~/.vimrc.nerdtree'))
 	source ~/.vimrc.nerdtree
 endif
