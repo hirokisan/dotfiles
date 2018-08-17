@@ -22,6 +22,7 @@ ln -fs dotfiles/vim/.vimrc.bufexplorer
 ln -fs dotfiles/vim/.vimrc.tmuxline.vim
 ln -fs dotfiles/vim/.vimrc.vim-indent-guides
 ln -fs dotfiles/vim/.vimrc.encode
+ln -fs dotfiles/vim/.vimrc.vim-ref
 ln -fs dotfiles/.gitconfig
 ln -fs dotfiles/.tigrc
 ln -fs dotfiles/.tmux.conf

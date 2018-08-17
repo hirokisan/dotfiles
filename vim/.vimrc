@@ -145,25 +145,6 @@ augroup END
 
 " ==========================="
 
-" ========== character =========="
-"
-" === ファイル読み込み時の文字コード ==="
-set encoding=utf-8
-"set fileencodings=iso-2022-jp,cp932,sjis,euc-jp,utf-8
-
-" === Vim script内でマルチバイト文字を使う場合の設定 ==="
-scriptencoding utf-8
-
-" === □や○文字が崩れる問題を解決, if you use iterm2 chk https://qiita.com/macoshita/items/f7e0f5eda02f45736b52 ==="
-" set ambiwidth=double
-
-" 改行コードの自動判別. 左側が優先される
-set fileformats=unix,dos,mac
-
-" vim-ref
-let g:ref_phpmanual_path = $HOME . '/.vim/refs/php-chunked-xhtml'
-
-" ==============================="
 
 " ========== syntastic =========="
 
@@ -242,6 +223,9 @@ if filereadable(expand('~/.vimrc.bufexplorer'))
 endif
 if filereadable(expand('~/.vimrc.vim-fugitive'))
 	source ~/.vimrc.vim-fugitive
+endif
+if filereadable(expand('~/.vimrc.vim-ref'))
+	source ~/.vimrc.vim-ref
 endif
 "if filereadable(expand('~/.vimrc.tmuxline.vim'))
 "	source ~/.vimrc.tmuxline.vim
