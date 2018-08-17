@@ -7,5 +7,7 @@ nmap <Space>gc :Gcommit<cr>
 nmap <Space>gb :Gblame<cr>
 nmap <Space>gre :silent! Ggrep<Space>
 
+nmap <Space>gp :Git p<cr>
+
 " grep検索の実行後にQuickFix Listを表示する
 autocmd QuickFixCmdPost *grep* cwindow
