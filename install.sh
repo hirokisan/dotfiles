@@ -49,6 +49,20 @@ sudo sh -c "echo '$HOME/local/bin/zsh' >> /etc/shells"
 chsh -s $HOME/local/bin/zsh
 ##################################
 
+########## install vim ##########
+mkdir -p ~/local/src
+cd ~/local/src
+git clone https://github.com/vim/vim
+cd vim
+./configure \
+    --prefix=$HOME/local \
+    --enable-multibyte \
+    --with-features=huge \
+    --enable-luainterp
+make
+make install
+##################################
+
 ########## install tmux ##########
 mkdir -p ~/local/src
 cd ~/local/src
