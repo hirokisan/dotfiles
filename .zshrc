@@ -6,15 +6,27 @@ export LC_CTYPE=en_US.UTF-8
 export EDITOR=vim
 export SHELL=$HOME/local/bin/zsh
 
-export PATH=$HOME/.nodebrew/current/bin:$PATH
-export PATH=$PATH:./node_modules/.bin
-export PATH="$PATH:`yarn global bin`"
 export PATH=$HOME/bin:$PATH
 export PATH=$HOME/local/bin:$PATH
 
+# nodejs
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+export PATH=$PATH:./node_modules/.bin
+export PATH="$PATH:`yarn global bin`"
+
+# pyenv
 export PATH=$HOME/.pyenv/bin:$PATH
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+# gvm
+[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
+
+# goenv
+export GOENV_ROOT="$HOME/.goenv"
+export PATH="$GOENV_ROOT/bin:$PATH"
+eval "$(goenv init -)"
+
 
 ###### set up tmuxinator ######
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
