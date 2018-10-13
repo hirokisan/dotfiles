@@ -37,6 +37,10 @@ Plug 'jlanzarotta/bufexplorer'
 " UML "
 Plug 'kazuph/previm'
 Plug 'tyru/open-browser.vim'
+
+" golang "
+Plug 'fatih/vim-go'
+
 call plug#end()
 autocmd VimEnter *
   \  if !empty(filter(copy(g:plugs), '!isdirectory(v:val.dir)'))
