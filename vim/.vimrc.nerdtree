@@ -41,7 +41,23 @@ let g:NERDTreeDirArrowExpandable  = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 
 " Map
-map <C-d> :NERDTreeToggle<CR>
+function! MyNERDTreeFindToggle()
+    "" Check if NERDTree is open
+    if exists("t:NERDTreeBufName")
+        let s:ntree = bufwinnr(t:NERDTreeBufName)
+    else
+        let s:ntree = -1
+    endif
+    if (s:ntree != -1)
+        "" If NERDTree is open, close it.
+        :NERDTreeClose
+    else
+        "" Open NERDTree in the file path
+        :NERDTreeFind
+    endif
+endfunction
+
+map <C-d> :call MyNERDTreeFindToggle()<CR>
 
 "==========================="
 

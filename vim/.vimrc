@@ -194,8 +194,8 @@ nmap <C-L> <C-W>l
 
 " Move tab
 nmap <Space>n :tabnew<CR>
-nmap <Space>l gt
-nmap <Space>h gT
+nmap <silent> <tab> gt
+nmap <silent> <S-tab> gT
 
 " Previm
 nmap <Space>mk :PrevimOpen<cr>
