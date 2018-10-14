@@ -1,4 +1,5 @@
 "===== Nerdtree config ====="
+" https://kamiya555.github.io/2015/10/14/nerdtree-command/ "
 
 " 起動時にNERDTreeを表示
 " autocmd vimenter * NERDTree
@@ -12,6 +13,9 @@ let NERDTreeShowHidden = 1
 
 " ブックマークを初期表示
 let g:NERDTreeShowBookmarks=1
+
+"他のバッファをすべて閉じた時にNERDTreeが開いていたらNERDTreeも一緒に閉じる。
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " NERDTress File highlighting
 function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
