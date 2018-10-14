@@ -64,6 +64,10 @@ make
 make install
 ##################################
 
+########## setup vim undo ##########
+mkdir -p ~/.vim/.vimundo
+####################################
+
 ########## install tmux ##########
 mkdir -p ~/local/src
 cd ~/local/src

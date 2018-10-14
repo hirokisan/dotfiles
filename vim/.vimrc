@@ -93,6 +93,11 @@ set hidden
 autocmd BufWinLeave ?* silent mkview
 " ファイルを開いた時に、以前のカーソル位置を復元する
 autocmd BufWinEnter ?* silent loadview
+" Undoを永続化する
+if has('persistent_undo')
+  set undodir=~/.vim/.vimundo
+  set undofile
+endif
 
 
 " ==========================="
