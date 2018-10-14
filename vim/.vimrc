@@ -85,6 +85,15 @@ set showmatch matchtime=1
 set cursorline
 " スワップファイル.swpを作成しない
 set noswapfile
+" 検索時にハイライト表示する
+set hlsearch
+"変更中のファイルでも、保存しないで他のファイルを表示
+set hidden
+" カーソル位置を記憶する
+autocmd BufWinLeave ?* silent mkview
+" ファイルを開いた時に、以前のカーソル位置を復元する
+autocmd BufWinEnter ?* silent loadview
+
 
 " ==========================="
 
@@ -197,6 +206,8 @@ nmap <Leader>i :PlugInstall<CR>
 
 " vimrcの更新
 nmap <Leader>l :source ~/.vimrc<CR>
+
+nnoremap <ESC><ESC> :nohl<CR>
 " ================================"
 
 " ========== Include other files =========="
