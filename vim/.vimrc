@@ -231,6 +231,9 @@ endif
 if filereadable(expand('~/.vimrc.vim-ref'))
 	source ~/.vimrc.vim-ref
 endif
+if filereadable(expand('~/.vimrc.vim-go'))
+	source ~/.vimrc.vim-go
+endif
 "if filereadable(expand('~/.vimrc.tmuxline.vim'))
 "	source ~/.vimrc.tmuxline.vim
 "endif
