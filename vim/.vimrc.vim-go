@@ -1,4 +1,5 @@
 let g:go_list_type = "quickfix"
+let g:go_highlight_types = 1
 set autowrite
 
 map ,c :cnext<CR>

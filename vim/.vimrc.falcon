@@ -1,0 +1,4 @@
+colorscheme falcon
+set termguicolors
+let g:falcon_airline = 1
+let g:airline_theme = 'falcon'

@@ -13,6 +13,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
+Plug 'fenetikm/falcon'
 " インデントの可視化
 "Plug 'Yggdroot/indentLine'
 Plug 'nathanaelkane/vim-indent-guides'
@@ -249,6 +250,9 @@ if filereadable(expand('~/.vimrc.vim-ref'))
 endif
 if filereadable(expand('~/.vimrc.vim-go'))
 	source ~/.vimrc.vim-go
+endif
+if filereadable(expand('~/.vimrc.falcon'))
+	source ~/.vimrc.falcon
 endif
 "if filereadable(expand('~/.vimrc.tmuxline.vim'))
 "	source ~/.vimrc.tmuxline.vim
