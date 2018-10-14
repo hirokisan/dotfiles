@@ -13,7 +13,8 @@ Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
-Plug 'fenetikm/falcon'
+"Plug 'fenetikm/falcon'
+Plug 'tomasr/molokai'
 " インデントの可視化
 "Plug 'Yggdroot/indentLine'
 Plug 'nathanaelkane/vim-indent-guides'
@@ -251,8 +252,11 @@ endif
 if filereadable(expand('~/.vimrc.vim-go'))
 	source ~/.vimrc.vim-go
 endif
-if filereadable(expand('~/.vimrc.falcon'))
-	source ~/.vimrc.falcon
+"if filereadable(expand('~/.vimrc.falcon'))
+"	source ~/.vimrc.falcon
+"endif
+if filereadable(expand('~/.vimrc.molokai'))
+	source ~/.vimrc.molokai
 endif
 "if filereadable(expand('~/.vimrc.tmuxline.vim'))
 "	source ~/.vimrc.tmuxline.vim
