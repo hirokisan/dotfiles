@@ -1,3 +1,9 @@
+let g:go_list_type = "quickfix"
+set autowrite
+
+map ,c :cnext<CR>
+map ,p :cprevious<CR>
+
 autocmd FileType go nmap ,gr <Plug>(go-run)
 autocmd FileType go nmap ,gb <Plug>(go-build)
 autocmd FileType go nmap ,gt <Plug>(go-test)
