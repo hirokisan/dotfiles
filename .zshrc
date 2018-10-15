@@ -12,12 +12,16 @@ export PATH=$HOME/local/bin:$PATH
 # nodejs
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH=$PATH:./node_modules/.bin
-export PATH="$PATH:`yarn global bin`"
+if (( $+commands[yarn] )); then
+    export PATH="$PATH:`yarn global bin`"
+fi
 
 # pyenv
 export PATH=$HOME/.pyenv/bin:$PATH
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+if (( $+commands[pyenv] )); then
+    eval "$(pyenv init -)"
+    eval "$(pyenv virtualenv-init -)"
+fi
 
 # gvm
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
@@ -26,7 +30,9 @@ eval "$(pyenv virtualenv-init -)"
 export GOENV_ROOT="$HOME/.goenv"
 export PATH="$GOENV_ROOT/bin:$PATH"
 export GOPATH=$HOME/go
-eval "$(goenv init -)"
+if (( $+commands[goenv] )); then
+    eval "$(goenv init -)"
+fi
 
 
 ###### set up tmuxinator ######
