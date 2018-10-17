@@ -27,6 +27,7 @@ ln -fs dotfiles/vim/.vimrc.vim-go
 #ln -fs dotfiles/vim/.vimrc.falcon
 ln -fs dotfiles/vim/.vimrc.molokai
 ln -fs dotfiles/.gitconfig
+ln -fs dotfiles/.git_template
 ln -fs dotfiles/.tigrc
 ln -fs dotfiles/.tmux.conf
 ln -fs dotfiles/.zshrc
