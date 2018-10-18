@@ -100,6 +100,9 @@ if has('persistent_undo')
   set undodir=~/.vim/.vimundo
   set undofile
 endif
+" バックスペースで削除可能な対象を指定
+" indent: 行頭の空白類の削除, eol: 改行の削除, start: 挿入モードの開始位置での削除
+set backspace=indent,eol,start
 
 
 " ==========================="
