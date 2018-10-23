@@ -28,8 +28,8 @@ fi
 
 # goenv
 export GOENV_ROOT="$HOME/.goenv"
-export PATH="$GOENV_ROOT/bin:$PATH"
-export GOPATH=$HOME/go
+export GOPATH=$HOME/go/third-party:$HOME/go/my-project
+export PATH=$PATH:$GOENV_ROOT/bin:$HOME/go/third-party/bin:$HOME/go/my-project/bin
 if (( $+commands[goenv] )); then
     eval "$(goenv init -)"
 fi
