@@ -36,6 +36,9 @@ Plug 'vim-syntastic/syntastic'
 Plug 'majutsushi/tagbar'
 Plug 'jlanzarotta/bufexplorer'
 
+" HTML/CSS
+Plug 'mattn/emmet-vim'
+
 " UML "
 Plug 'kazuph/previm'
 Plug 'tyru/open-browser.vim'
@@ -260,6 +263,9 @@ endif
 "endif
 if filereadable(expand('~/.vimrc.molokai'))
 	source ~/.vimrc.molokai
+endif
+if filereadable(expand('~/.vimrc.emmet-vim'))
+	source ~/.vimrc.emmet-vim
 endif
 "if filereadable(expand('~/.vimrc.tmuxline.vim'))
 "	source ~/.vimrc.tmuxline.vim
