@@ -4,29 +4,6 @@ set -eu
 
 cd ~
 ln -fs dotfiles/vim/.vimrc
-ln -fs dotfiles/vim/.vimrc.nerdtree
-ln -fs dotfiles/vim/.vimrc.nerdtree-git-plugin
-ln -fs dotfiles/vim/.vimrc.vim-gitgutter
-ln -fs dotfiles/vim/.vimrc.vim-airline
-ln -fs dotfiles/vim/.vimrc.indentLine
-ln -fs dotfiles/vim/.vimrc.unite
-ln -fs dotfiles/vim/.vimrc.vim-quickrun
-ln -fs dotfiles/vim/.vimrc.caw
-ln -fs dotfiles/vim/.vimrc.open-browser
-ln -fs dotfiles/vim/.vimrc.vim-fugitive
-ln -fs dotfiles/vim/.vimrc.neocomplete
-ln -fs dotfiles/vim/.vimrc.neosnippet
-ln -fs dotfiles/vim/.vimrc.vim-expand-region
-ln -fs dotfiles/vim/.vimrc.tagbar
-ln -fs dotfiles/vim/.vimrc.bufexplorer
-ln -fs dotfiles/vim/.vimrc.tmuxline.vim
-ln -fs dotfiles/vim/.vimrc.vim-indent-guides
-ln -fs dotfiles/vim/.vimrc.encode
-ln -fs dotfiles/vim/.vimrc.vim-ref
-ln -fs dotfiles/vim/.vimrc.vim-go
-#ln -fs dotfiles/vim/.vimrc.falcon
-ln -fs dotfiles/vim/.vimrc.molokai
-ln -fs dotfiles/vim/.vimrc.emmet-vim
 ln -fs dotfiles/.gitconfig
 ln -fs dotfiles/.git_template
 ln -fs dotfiles/.tigrc
