@@ -40,7 +40,11 @@ cd vim
     --prefix=$HOME/local \
     --enable-multibyte \
     --with-features=huge \
-    --enable-luainterp
+    --enable-luainterp \
+    --enable-luainterp \
+    --enable-perlinterp \
+    --enable-pythoninterp \
+    --enable-rubyinterp
 make
 make install
 ##################################
