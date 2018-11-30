@@ -3,6 +3,34 @@
 set -eu
 
 cd ~
+
+########## restore dotfiles #########
+if [[ -e ~/.vimrc ]]; then
+    mv .vimrc .vimrc.bk
+fi
+if [[ -e ~/.gitconfig ]]; then
+    mv .gitconfig .gitconfig.bk
+fi
+if [[ -e ~/.git_template ]]; then
+    mv .git_template .git_template.bk
+fi
+if [[ -e ~/.tigrc ]]; then
+    mv .tigrc .tigrc.bk
+fi
+if [[ -e ~/.tmux.conf ]]; then
+    mv .tmux.conf .tmux.conf.bk
+fi
+if [[ -e ~/.zshrc ]]; then
+    mv .zshrc .zshrc.bk
+fi
+if [[ -e ~/.zshrc.alias ]]; then
+    mv .zshrc.alias .zshrc.alias.bk
+fi
+if [[ -e ~/.zshrc.zplug ]]; then
+    mv .zshrc.zplug .zshrc.zplug.bk
+fi
+#####################################
+
 ln -fs dotfiles/vim/.vimrc
 ln -fs dotfiles/.gitconfig
 ln -fs dotfiles/.git_template
