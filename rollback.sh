@@ -67,6 +67,11 @@ rm zsh-5.5.1.tar.xz
 cd ~/local/bin
 rm zsh
 rm zsh-5.5.1
+cd ~/local/lib
+rm -rf zsh
+cd ~/local/share
+rm -rf man
+rm -rf zsh
 ###############################
 
 ########## remove vim #########
@@ -81,6 +86,8 @@ unlink view
 unlink rview
 unlink rvim
 unlink ex
+cd ~/local/share
+rm -rf vim
 ###############################
 
 ########## remove tmux ########
@@ -115,6 +122,8 @@ rm tig-2.3.3.tar.gz
 rm -rf tig-2.3.3
 cd ~/local/bin
 rm tig
+cd ~/local/etc
+rm tigrc
 ################################
 
 ########## remove ctags ##########
@@ -131,6 +140,8 @@ rm the_silver_searcher-2.1.0.tar.gz
 rm -rf the_silver_searcher-2.1.0
 cd ~/local/bin
 rm ag
+cd ~/local/share
+rm -rf the_silver_searcher
 ###############################
 
 ########## remove MySQLTuner ##########
