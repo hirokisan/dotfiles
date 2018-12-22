@@ -12,3 +12,9 @@ autocmd FileType go nmap ,gc <Plug>(go-coverage)
 autocmd FileType go nmap ,gd <Plug>(go-doc)
 autocmd FileType go nmap ,gi <Plug>(go-import)
 autocmd FileType go nmap ,gm <Plug>(go-implements)
+
+nmap ;g :GoDebugStart<CR>
+nmap ;c :GoDebugContinue<CR>
+nmap ;b :GoDebugBreakpoint<CR>
+nmap ;n :GoDebugNext<CR>
+nmap ;s :GoDebugStop<CR>
