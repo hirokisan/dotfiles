@@ -225,50 +225,53 @@ nnoremap <ESC><ESC> :nohl<CR>
 
 " ========== Include other files =========="
 " todo: automate include
-if filereadable(expand('~/.vimrc.encode'))
-	source ~/.vimrc.encode
+if filereadable(expand('~/dotfiles/vim/.vimrc.encode'))
+	source ~/dotfiles/vim/.vimrc.encode
 endif
-if filereadable(expand('~/.vimrc.nerdtree'))
-	source ~/.vimrc.nerdtree
+if filereadable(expand('~/dotfiles/vim/.vimrc.nerdtree'))
+	source ~/dotfiles/vim/.vimrc.nerdtree
 endif
-if filereadable(expand('~/.vimrc.unite'))
-	source ~/.vimrc.unite
+if filereadable(expand('~/dotfiles/vim/.vimrc.unite'))
+	source ~/dotfiles/vim/.vimrc.unite
 endif
-if filereadable(expand('~/.vimrc.vim-expand-region'))
-	source ~/.vimrc.vim-expand-region
+if filereadable(expand('~/dotfiles/vim/.vimrc.vim-expand-region'))
+	source ~/dotfiles/vim/.vimrc.vim-expand-region
 endif
-if filereadable(expand('~/.vimrc.vim-quickrun'))
-	source ~/.vimrc.vim-quickrun
+if filereadable(expand('~/dotfiles/vim/.vimrc.vim-quickrun'))
+	source ~/dotfiles/vim/.vimrc.vim-quickrun
 endif
-if filereadable(expand('~/.vimrc.neosnippet'))
-	source ~/.vimrc.neosnippet
+if filereadable(expand('~/dotfiles/vim/.vimrc.neosnippet'))
+	source ~/dotfiles/vim/.vimrc.neosnippet
 endif
-if filereadable(expand('~/.vimrc.tagbar'))
-	source ~/.vimrc.tagbar
+if filereadable(expand('~/dotfiles/vim/.vimrc.tagbar'))
+	source ~/dotfiles/vim/.vimrc.tagbar
 endif
-if filereadable(expand('~/.vimrc.bufexplorer'))
-	source ~/.vimrc.bufexplorer
+if filereadable(expand('~/dotfiles/vim/.vimrc.bufexplorer'))
+	source ~/dotfiles/vim/.vimrc.bufexplorer
 endif
-if filereadable(expand('~/.vimrc.vim-fugitive'))
-	source ~/.vimrc.vim-fugitive
+if filereadable(expand('~/dotfiles/vim/.vimrc.vim-fugitive'))
+	source ~/dotfiles/vim/.vimrc.vim-fugitive
 endif
-if filereadable(expand('~/.vimrc.vim-ref'))
-	source ~/.vimrc.vim-ref
+if filereadable(expand('~/dotfiles/vim/.vimrc.vim-ref'))
+	source ~/dotfiles/vim/.vimrc.vim-ref
 endif
-if filereadable(expand('~/.vimrc.vim-go'))
-	source ~/.vimrc.vim-go
+if filereadable(expand('~/dotfiles/vim/.vimrc.vim-go'))
+	source ~/dotfiles/vim/.vimrc.vim-go
 endif
-"if filereadable(expand('~/.vimrc.falcon'))
-"	source ~/.vimrc.falcon
+"if filereadable(expand('~/dotfiles/vim/.vimrc.falcon'))
+"	source ~/dotfiles/vim/.vimrc.falcon
 "endif
-if filereadable(expand('~/.vimrc.molokai'))
-	source ~/.vimrc.molokai
+if filereadable(expand('~/dotfiles/vim/.vimrc.molokai'))
+	source ~/dotfiles/vim/.vimrc.molokai
 endif
-if filereadable(expand('~/.vimrc.emmet-vim'))
-	source ~/.vimrc.emmet-vim
+if filereadable(expand('~/dotfiles/vim/.vimrc.emmet-vim'))
+	source ~/dotfiles/vim/.vimrc.emmet-vim
 endif
-"if filereadable(expand('~/.vimrc.tmuxline.vim'))
-"	source ~/.vimrc.tmuxline.vim
+if filereadable(expand('~/dotfiles/vim/.vimrc.local'))
+	source ~/dotfiles/vim/.vimrc.local
+endif
+"if filereadable(expand('~/dotfiles/vim/.vimrc.tmuxline.vim'))
+"	source ~/dotfiles/vim/.vimrc.tmuxline.vim
 "endif
 " ========================================="
 
