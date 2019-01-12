@@ -5,6 +5,7 @@ nmap <Space>ga :Gwrite<cr>
 nmap <Space>gr :Gread<cr>
 nmap <Space>gc :Gcommit<cr>
 nmap <Space>gb :Gblame<cr>
+nmap <Space>go :Gbrowse<cr>
 nmap <Space>gre :silent! Ggrep<Space>
 
 nmap <Space>gp :Git p<cr>
