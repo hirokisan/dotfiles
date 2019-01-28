@@ -34,6 +34,11 @@ if (( $+commands[goenv] )); then
     eval "$(goenv init -)"
 fi
 
+# rbenv
+export PATH=$HOME/.rbenv/bin:$PATH
+if (( $+commands[rbenv] )); then
+    eval "$(rbenv init -)"
+fi
 
 ###### set up tmuxinator ######
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
