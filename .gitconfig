@@ -9,7 +9,6 @@
     st = status
     br = branch
     hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short --all --oneline --decorate
-    today = log --since=midnight --author='Yuki Adachi' --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short --all --oneline --decorate
     branch-name = "!git rev-parse --abbrev-ref HEAD"
     f = "!git fetch --all --prune && git rebase origin/$(git branch-name)"
     p = "!git push origin $(git branch-name)"
