@@ -53,6 +53,10 @@ source ~/.zshrc.zplug
 source ~/.zshrc.alias
 ##########################
 
+###### set up local ######
+[[ -s ~/.zshrc.local ]] && source ~/.zshrc.local
+##########################
+
 ###### Basic Setting ######
 # PCRE 互換の正規表現を使う
 setopt re_match_pcre
