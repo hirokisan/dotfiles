@@ -36,6 +36,8 @@ Plug 'thinca/vim-ref'
 Plug 'vim-syntastic/syntastic'
 Plug 'majutsushi/tagbar'
 Plug 'jlanzarotta/bufexplorer'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 " HTML/CSS
 Plug 'mattn/emmet-vim'
@@ -270,6 +272,9 @@ if filereadable(expand('~/dotfiles/vim/.vimrc.emmet-vim'))
 endif
 if filereadable(expand('~/dotfiles/vim/.vimrc.local'))
 	source ~/dotfiles/vim/.vimrc.local
+endif
+if filereadable(expand('~/dotfiles/vim/.vimrc.fzf'))
+	source ~/dotfiles/vim/.vimrc.fzf
 endif
 "if filereadable(expand('~/dotfiles/vim/.vimrc.tmuxline.vim'))
 "	source ~/dotfiles/vim/.vimrc.tmuxline.vim
