@@ -53,6 +53,10 @@ source ~/.zshrc.zplug
 source ~/.zshrc.alias
 ##########################
 
+###### set up z.sh ######
+[[ -s "$HOME/.zsh.d/z.sh" ]] && source "$HOME/.zsh.d/z.sh"
+##########################
+
 ###### set up local ######
 [[ -s ~/.zshrc.local ]] && source ~/.zshrc.local
 ##########################
@@ -128,3 +132,23 @@ zstyle ':completion:*:sudo:*' command-path /usr/local/sbin /usr/local/bin \
                              /usr/sbin /usr/bin /sbin /bin /usr/X11R6/bin \
                              /usr/local/git/bin
 ###################
+
+#### z.sh peco ###
+function peco-z-search
+{
+  which peco z > /dev/null
+  if [ $? -ne 0 ]; then
+    echo "Please install peco and z"
+    return 1
+  fi
+  local res=$(z | sort -rn | cut -c 12- | peco)
+  if [ -n "$res" ]; then
+    BUFFER+="cd $res"
+    zle accept-line
+  else
+    return 1
+  fi
+}
+zle -N peco-z-search
+bindkey '^f' peco-z-search
+#############
