@@ -53,10 +53,6 @@ source ~/.zshrc.zplug
 source ~/.zshrc.alias
 ##########################
 
-###### set up z.sh ######
-[[ -s "$HOME/.zsh.d/z.sh" ]] && source "$HOME/.zsh.d/z.sh"
-##########################
-
 ###### set up local ######
 [[ -s ~/.zshrc.local ]] && source ~/.zshrc.local
 ##########################

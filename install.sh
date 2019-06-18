@@ -156,7 +156,3 @@ cd ~/local/bin
 wget http://mysqltuner.pl/ -O mysqltuner.pl
 chmod +x mysqltuner.pl
 ########################################
-
-########## Install z.sh ##########
-git clone https://github.com/rupa/z.git ~/.zsh.d
-##################################
