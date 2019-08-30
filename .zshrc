@@ -33,6 +33,7 @@ export PATH=$PATH:$GOENV_ROOT/bin:$GOPATH/bin
 if (( $+commands[goenv] )); then
     eval "$(goenv init -)"
 fi
+#export GOENV_DISABLE_GOPATH=1
 
 # rbenv
 export PATH=$HOME/.rbenv/bin:$PATH
