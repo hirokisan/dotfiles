@@ -208,6 +208,10 @@ nmap <Space>n :tabnew<CR>
 nmap <silent> <tab> gt
 nmap <silent> <S-tab> gT
 
+" split window
+nnoremap <Space>s :vsplit<CR>
+nnoremap <Space>d :split<CR>
+
 " Previm
 nmap <Space>mk :PrevimOpen<cr>
 
