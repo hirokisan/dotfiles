@@ -48,6 +48,9 @@ Plug 'mattn/emmet-vim'
 Plug 'kazuph/previm'
 Plug 'tyru/open-browser.vim'
 
+" LSP "
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 " golang "
 Plug 'fatih/vim-go'
 
