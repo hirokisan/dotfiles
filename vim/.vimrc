@@ -39,6 +39,7 @@ Plug 'jlanzarotta/bufexplorer'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'simeji/winresizer'
+Plug 'osyo-manga/vim-over'
 
 " HTML/CSS
 Plug 'mattn/emmet-vim'
@@ -280,6 +281,9 @@ if filereadable(expand('~/dotfiles/vim/.vimrc.local'))
 endif
 if filereadable(expand('~/dotfiles/vim/.vimrc.fzf'))
 	source ~/dotfiles/vim/.vimrc.fzf
+endif
+if filereadable(expand('~/dotfiles/vim/.vimrc.vim-over'))
+	source ~/dotfiles/vim/.vimrc.vim-over
 endif
 "if filereadable(expand('~/dotfiles/vim/.vimrc.tmuxline.vim'))
 "	source ~/dotfiles/vim/.vimrc.tmuxline.vim
