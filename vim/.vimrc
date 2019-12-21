@@ -288,6 +288,9 @@ endif
 if filereadable(expand('~/dotfiles/vim/.vimrc.vim-over'))
 	source ~/dotfiles/vim/.vimrc.vim-over
 endif
+if filereadable(expand('~/dotfiles/vim/.vimrc.syntastic'))
+	source ~/dotfiles/vim/.vimrc.syntastic
+endif
 "if filereadable(expand('~/dotfiles/vim/.vimrc.tmuxline.vim'))
 "	source ~/dotfiles/vim/.vimrc.tmuxline.vim
 "endif
