@@ -42,6 +42,9 @@ Plug 'junegunn/fzf.vim'
 Plug 'simeji/winresizer'
 Plug 'osyo-manga/vim-over'
 
+" vue
+Plug 'posva/vim-vue'
+
 " HTML/CSS
 Plug 'mattn/emmet-vim'
 
