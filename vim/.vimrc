@@ -33,7 +33,8 @@ Plug 'terryma/vim-expand-region'
 Plug 'bronson/vim-trailing-whitespace'
 " depends on package lynx
 Plug 'thinca/vim-ref'
-Plug 'vim-syntastic/syntastic'
+"Plug 'vim-syntastic/syntastic'
+Plug 'dense-analysis/ale'
 Plug 'majutsushi/tagbar'
 Plug 'jlanzarotta/bufexplorer'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -288,8 +289,11 @@ endif
 if filereadable(expand('~/dotfiles/vim/.vimrc.vim-over'))
 	source ~/dotfiles/vim/.vimrc.vim-over
 endif
-if filereadable(expand('~/dotfiles/vim/.vimrc.syntastic'))
-	source ~/dotfiles/vim/.vimrc.syntastic
+"if filereadable(expand('~/dotfiles/vim/.vimrc.syntastic'))
+"	source ~/dotfiles/vim/.vimrc.syntastic
+"endif
+if filereadable(expand('~/dotfiles/vim/.vimrc.ale'))
+	source ~/dotfiles/vim/.vimrc.ale
 endif
 "if filereadable(expand('~/dotfiles/vim/.vimrc.tmuxline.vim'))
 "	source ~/dotfiles/vim/.vimrc.tmuxline.vim

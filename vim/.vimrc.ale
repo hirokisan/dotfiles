@@ -1,0 +1,14 @@
+" avoid error 'E788: Not allowed to edit another buffer now'
+let g:ale_set_loclist = 1
+
+let g:ale_linters = {
+\   'javascript': ['eslint'],
+\   'go': ['gofmt'],
+\}
+
+let b:ale_fixers = {'javascript': ['eslint']}
+
+let g:ale_lint_on_save = 1
+let g:ale_fix_on_save = 1
+
+"let g:ale_lint_on_text_changed = 'never'
