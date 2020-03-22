@@ -45,6 +45,9 @@ Plug 'osyo-manga/vim-over'
 " vue
 Plug 'posva/vim-vue'
 
+" react
+Plug 'maxmellon/vim-jsx-pretty'
+
 " HTML/CSS
 Plug 'mattn/emmet-vim'
 
