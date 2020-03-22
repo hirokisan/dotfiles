@@ -48,6 +48,9 @@ Plug 'posva/vim-vue'
 " react
 Plug 'maxmellon/vim-jsx-pretty'
 
+" javascript
+Plug 'ternjs/tern_for_vim'
+
 " HTML/CSS
 Plug 'mattn/emmet-vim'
 
@@ -300,6 +303,9 @@ endif
 "endif
 if filereadable(expand('~/dotfiles/vim/.vimrc.ale'))
 	source ~/dotfiles/vim/.vimrc.ale
+endif
+if filereadable(expand('~/dotfiles/vim/.vimrc.tern_for_vim'))
+	source ~/dotfiles/vim/.vimrc.tern_for_vim
 endif
 "if filereadable(expand('~/dotfiles/vim/.vimrc.tmuxline.vim'))
 "	source ~/dotfiles/vim/.vimrc.tmuxline.vim
