@@ -194,10 +194,6 @@ augroup END
 
 " ========== End Indent =========="
 
-" ========== Hightlight =========="
-highlight Pmenu ctermbg=52
-" ========== End Hightlight =========="
-
 " ==========================="
 
 
