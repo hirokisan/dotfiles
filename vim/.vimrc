@@ -67,6 +67,7 @@ Plug 'tyru/open-browser.vim'
 " LSP "
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+
 " golang "
 Plug 'fatih/vim-go'
 
@@ -193,6 +194,10 @@ augroup END
 
 " ========== End Indent =========="
 
+" ========== Hightlight =========="
+highlight Pmenu ctermbg=52
+" ========== End Hightlight =========="
+
 " ==========================="
 
 
@@ -312,6 +317,9 @@ if filereadable(expand('~/dotfiles/vim/.vimrc.ale'))
 endif
 if filereadable(expand('~/dotfiles/vim/.vimrc.tern_for_vim'))
 	source ~/dotfiles/vim/.vimrc.tern_for_vim
+endif
+if filereadable(expand('~/dotfiles/vim/.vimrc.coc'))
+	source ~/dotfiles/vim/.vimrc.coc
 endif
 "if filereadable(expand('~/dotfiles/vim/.vimrc.tmuxline.vim'))
 "	source ~/dotfiles/vim/.vimrc.tmuxline.vim
