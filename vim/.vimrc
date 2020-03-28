@@ -51,6 +51,12 @@ Plug 'maxmellon/vim-jsx-pretty'
 " javascript
 Plug 'ternjs/tern_for_vim'
 
+" typescript
+Plug 'leafgarland/typescript-vim'
+
+" typescript for react
+Plug 'peitalin/vim-jsx-typescript'
+
 " HTML/CSS
 Plug 'mattn/emmet-vim'
 

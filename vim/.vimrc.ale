@@ -3,6 +3,8 @@ let g:ale_set_loclist = 1
 
 let g:ale_linters = {
 \   'javascript': ['eslint'],
+\   'typescript': ['tslint'],
+\   'typescriptreact': ['tslint'],
 \   'vue': ['eslint'],
 \   'go': ['gofmt'],
 \   'html': [],
@@ -10,6 +12,8 @@ let g:ale_linters = {
 
 let b:ale_fixers = {
 \   'javascript': ['prettier', 'eslint'],
+\   'typescript': ['prettier', 'tslint'],
+\   'typescriptreact': ['prettier', 'tslint'],
 \   'vue': ['eslint']
 \}
 
