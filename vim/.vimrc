@@ -237,6 +237,13 @@ nnoremap <Space>d :split<CR>
 " Previm
 nmap <Space>mk :PrevimOpen<cr>
 
+" n: forward, N: backward
+nnoremap <expr> n 'Nn'[v:searchforward]
+nnoremap <expr> N 'nN'[v:searchforward]
+
+" only highlight without moving
+nnoremap # :keepjumps normal! mi#`i<CR>
+
 " vim-ref https://qiita.com/c8112002/items/85a2c2cc3721c79a5322 shift+k
 nmap <Space>mp :<C-u>Ref phpmanual<Space>
 
