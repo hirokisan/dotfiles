@@ -131,7 +131,8 @@ endif
 " バックスペースで削除可能な対象を指定
 " indent: 行頭の空白類の削除, eol: 改行の削除, start: 挿入モードの開始位置での削除
 set backspace=indent,eol,start
-
+" turn off bell
+set belloff=all
 
 " ==========================="
 
@@ -209,7 +210,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 1
 " 構文エラーリストを表示
 let g:syntastic_auto_loc_list=1
-let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd'] 
+let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']
 
 " ==============================="
 
