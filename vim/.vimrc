@@ -257,6 +257,11 @@ nmap <Leader>i :PlugInstall<CR>
 " vimrcの更新
 nmap <Leader>l :source ~/.vimrc<CR>
 
+inoremap jk <ESC>
+
+" ファイルを保存する
+nmap fs :w<CR>
+
 nnoremap <ESC><ESC> :nohl<CR>
 " ================================"
 
