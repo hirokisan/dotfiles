@@ -262,6 +262,12 @@ inoremap jk <ESC>
 " ファイルを保存する
 nmap fs :w<CR>
 
+" insert mode でのカーソル移動
+imap <C-k> <Up>
+imap <C-j> <Down>
+imap <C-h> <Left>
+imap <C-l> <Right>
+
 nnoremap <ESC><ESC> :nohl<CR>
 " ================================"
 
