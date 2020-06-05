@@ -1,1 +1,13 @@
 let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier']
+
+" TODO : change color for each status
+
+" background color for popup menu
+highlight Pmenu ctermbg=16 ctermfg=111
+
+" :h coc-highlights to check how to set up
+highlight CocErrorHighlight ctermfg=Red  guifg=#ff0000
+highlight CocErrorSign  ctermfg=White guifg=#ff0000
+highlight CocErrorLine ctermfg=Red  guifg=#ff0000
+
+highlight CocWarningSign  ctermfg=Brown guifg=#ff922b
