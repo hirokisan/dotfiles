@@ -260,7 +260,10 @@ nmap <Leader>l :source ~/.vimrc<CR>
 inoremap jk <ESC>
 
 " ファイルを保存する
-nmap fs :w<CR>
+nmap fd :w<CR>
+
+" ファイルを保存して閉じる
+nmap fa :wq<CR>
 
 " insert mode でのカーソル移動
 imap <C-k> <Up>
