@@ -41,6 +41,10 @@ if (( $+commands[rbenv] )); then
     eval "$(rbenv init -)"
 fi
 
+# tmux
+bindkey "^E" beginning-of-line
+bindkey "^A" end-of-line
+
 ###### set up tmuxinator ######
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 source ~/.tmuxinator/tmuxinator.zsh
