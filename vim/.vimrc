@@ -133,6 +133,8 @@ endif
 set backspace=indent,eol,start
 " turn off bell
 set belloff=all
+" turn off cursorbind when split window
+set nocursorbind
 
 " ==========================="
 
