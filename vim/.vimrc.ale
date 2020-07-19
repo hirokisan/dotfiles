@@ -6,7 +6,7 @@ let g:ale_linters = {
 \   'typescript': ['tslint'],
 \   'typescriptreact': ['tslint'],
 \   'vue': ['eslint'],
-\   'go': ['gofmt'],
+\   'go': ['golint', 'gofmt', 'gopls'],
 \   'html': [],
 \}
 
@@ -17,7 +17,8 @@ let b:ale_fixers = {
 \   'vue': ['eslint']
 \}
 
-let g:ale_lint_on_save = 1
+" NOTE: 保存した時と変更した時にlintが動くとおかしな挙動になる場合があるのでコメントアウトしている
+"let g:ale_lint_on_save = 1
 let g:ale_fix_on_save = 1
 " TODO: need to refresh vimrc with ",l"
 let g:jsx_ext_required = 0
