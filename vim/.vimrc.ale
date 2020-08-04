@@ -22,7 +22,11 @@ let b:ale_fixers = {
 " NOTE: 保存した時と変更した時にlintが動くとおかしな挙動になる場合があるのでコメントアウトしている
 "let g:ale_lint_on_save = 1
 let g:ale_fix_on_save = 1
-" TODO: need to refresh vimrc with ",l"
+
+" NOTE: need to refresh vimrc with ",l", so use autocmd to source like below
+" autocmd event list : https://vim-jp.org/vimdoc-en/autocmd.html#autocommand-events
+autocmd BufEnter * source ~/dotfiles/vim/.vimrc
+
 let g:jsx_ext_required = 0
 
 highlight ALEWarning ctermbg=DarkMagenta
