@@ -7,6 +7,7 @@ let g:ale_linters = {
 \   'typescriptreact': ['tslint'],
 \   'vue': ['eslint'],
 \   'go': ['golint', 'gofmt', 'gopls'],
+\   'python': ['flake8', 'mypy'],
 \   'html': [],
 \}
 
@@ -14,7 +15,8 @@ let b:ale_fixers = {
 \   'javascript': ['prettier', 'eslint'],
 \   'typescript': ['prettier', 'tslint'],
 \   'typescriptreact': ['prettier', 'tslint'],
-\   'vue': ['eslint']
+\   'vue': ['eslint'],
+\   'python': ['black'],
 \}
 
 " NOTE: 保存した時と変更した時にlintが動くとおかしな挙動になる場合があるのでコメントアウトしている
