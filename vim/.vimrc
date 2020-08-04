@@ -347,3 +347,5 @@ endif
 "	source ~/dotfiles/vim/.vimrc.tmuxline.vim
 "endif
 " ========================================="
+
+" ref https://thinca.hatenablog.com/entry/20100205/1265307642
