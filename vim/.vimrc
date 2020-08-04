@@ -67,7 +67,6 @@ Plug 'tyru/open-browser.vim'
 " LSP "
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-
 " golang "
 Plug 'fatih/vim-go'
 
@@ -186,6 +185,9 @@ if has("autocmd")
   autocmd FileType yaml        setlocal sw=2 sts=2 ts=2 et
   autocmd FileType zsh         setlocal sw=4 sts=4 ts=4 et
   autocmd FileType scala       setlocal sw=2 sts=2 ts=2 et
+
+  " need to detect filetype after reload vimrc, because reload vimrc not detect filetipe
+  filetype detect
 endif
 
 " https://mickey24.hatenablog.com/entry/20120808/vim_highlight_trailing_spaces
@@ -345,4 +347,3 @@ endif
 "	source ~/dotfiles/vim/.vimrc.tmuxline.vim
 "endif
 " ========================================="
-
