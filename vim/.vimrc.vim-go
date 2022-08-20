@@ -1,6 +1,6 @@
 let g:go_list_type = "quickfix"
 let g:go_highlight_types = 1
-let g:go_fmt_command = "goimports"
+let g:go_fmt_command = "gopls"
 let g:go_fmt_fail_silently = 1
 set autowrite
 
@@ -12,7 +12,7 @@ autocmd FileType go nmap ,gb <Plug>(go-build)
 autocmd FileType go nmap ,gt <Plug>(go-test)
 autocmd FileType go nmap ,gc <Plug>(go-coverage)
 autocmd FileType go nmap ,gd <Plug>(go-doc)
-autocmd FileType go nmap ,gi <Plug>(go-import)
+autocmd FileType go nmap ,gi <Plug>(go-imports)
 autocmd FileType go nmap ,gm <Plug>(go-implements)
 
 nmap ;g :GoDebugStart<CR>

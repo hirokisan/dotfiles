@@ -1,10 +1,12 @@
 " avoid error 'E788: Not allowed to edit another buffer now'
 let g:ale_set_loclist = 1
 
+let g:ale_python_flake8_executable = 'python3'
+
 let g:ale_linters = {
 \   'javascript': ['eslint'],
-\   'typescript': ['tslint'],
-\   'typescriptreact': ['tslint'],
+"\   'typescript': ['eslint'],
+"\   'typescriptreact': ['eslint'],
 \   'vue': ['eslint'],
 \   'go': ['golint', 'gofmt', 'gopls'],
 \   'python': ['flake8', 'mypy'],
@@ -13,9 +15,10 @@ let g:ale_linters = {
 
 let g:ale_fixers = {
 \   'css': ['prettier'],
+\   'scss': ['prettier'],
 \   'javascript': ['prettier', 'eslint'],
-\   'typescript': ['prettier', 'tslint'],
-\   'typescriptreact': ['prettier', 'tslint'],
+\   'typescript': ['prettier', 'eslint'],
+\   'typescriptreact': ['prettier', 'eslint'],
 \   'vue': ['eslint'],
 \   'python': ['black'],
 \}
@@ -25,7 +28,10 @@ let g:ale_fixers = {
 let g:ale_fix_on_save = 1
 let g:jsx_ext_required = 0
 
+nnoremap <Space>agd :ALEGoToDefinition<CR>
+
 highlight ALEWarning ctermbg=DarkMagenta
 highlight ALEError ctermbg=DarkMagenta
 
 "let g:ale_lint_on_text_changed = 'never'
+

@@ -27,9 +27,11 @@ fi
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 
 # goenv
-#export GOENV_DISABLE_GOPATH=1
+export GO111MODULE=on
+export GOENV_DISABLE_GOPATH=1
 export GOENV_ROOT="$HOME/.goenv"
 export GOPATH=$HOME/go
+export GOBIN=$HOME/go/bin
 export PATH=$PATH:$GOENV_ROOT/bin:$GOPATH/bin
 if (( $+commands[goenv] )); then
     eval "$(goenv init -)"
@@ -154,3 +156,11 @@ function peco-z-search
 zle -N peco-z-search
 bindkey '^f' peco-z-search
 #############
+
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export GOENV_DISABLE_GOPATH=1
+
+alias ke='kubectl'
+alias wke='watch kubectl'
