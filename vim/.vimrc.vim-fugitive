@@ -4,7 +4,7 @@ nmap <Space>gd :Gdiff<cr>
 nmap <Space>ga :Gwrite<cr>
 nmap <Space>gr :Gread<cr>
 nmap <Space>gc :Gcommit<cr>
-nmap <Space>gb :Gblame<cr>
+nmap <Space>gb :Git blame<cr>
 nmap <Space>go :Gbrowse<cr>
 xnoremap <Space>go :Gbrowse<cr>
 nmap <Space>gre :silent! Ggrep<Space>
