@@ -41,6 +41,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'simeji/winresizer'
 Plug 'osyo-manga/vim-over'
+Plug 'rust-lang/rust.vim'
 
 " vue
 Plug 'posva/vim-vue'
@@ -342,6 +343,9 @@ if filereadable(expand('~/dotfiles/vim/.vimrc.tern_for_vim'))
 endif
 if filereadable(expand('~/dotfiles/vim/.vimrc.coc'))
 	source ~/dotfiles/vim/.vimrc.coc
+endif
+if filereadable(expand('~/dotfiles/vim/.vimrc.rust.vim'))
+	source ~/dotfiles/vim/.vimrc.rust.vim
 endif
 "if filereadable(expand('~/dotfiles/vim/.vimrc.tmuxline.vim'))
 "	source ~/dotfiles/vim/.vimrc.tmuxline.vim

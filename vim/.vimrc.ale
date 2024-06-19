@@ -35,3 +35,8 @@ highlight ALEError ctermbg=DarkMagenta
 
 "let g:ale_lint_on_text_changed = 'never'
 
+augroup filetype_rust
+    au!
+    au BufRead,BufNewFile *.rs nnoremap K :ALEHover<CR>
+    au BufRead,BufNewFile *.rs nnoremap <C-]> :ALEGoToDefinition<CR>
+augroup END
